@@ -64,77 +64,76 @@
       }
     }
   }
-}
 
-// About
-#about {
-  &-a {
-    .about-info {
-      grid-template-areas:
-        "bioimage"
-        "bio"
-        "aw1"
-        "aw2"
-        "aw3";
+  // About
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          "bioimage"
+          "bio"
+          "aw1"
+          "aw2"
+          "aw3";
+      }
+    }
+
+    &-c {
+      display: none;
     }
   }
 
-  &-c {
-    display: none;
-  }
-}
+  // Contact
+  #contact {
+    &-a {
+      margin: 0;
 
-// Contact
-#contact {
-  &-a {
-    margin: 0;
-
-    .text-fields {
-      grid-template-areas:
-        "name"
-        "subject"
-        "email"
-        "phone"
-        "message";
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message";
+      }
     }
-  }
 
-  &-b {
-    margin: 0;
+    &-b {
+      margin: 0;
 
-    div {
-      margin-bottom: 1rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px #555 solid;
+      div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px #555 solid;
 
-      &:last-child {
-        border: none;
-        margin-bottom: 0;
-        padding-bottom: 0;
+        &:last-child {
+          border: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &-c {
+      margin: 0;
+
+      h1 {
+        font-size: 2.5rem;
       }
     }
   }
 
-  &-c {
-    margin: 0;
+  // Footer
+  #main-footer {
+    height: 7rem;
 
-    h1 {
-      font-size: 2.5rem;
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
     }
   }
 }
-
-// Footer
-#main-footer {
-  height: 7rem;
-
-  .footer-content {
-    flex-direction: column;
-    padding: 1rem;
-    height: 5rem;
-  }
-}
-
 // Landscape
 @media (max-height: 500px) {
   #header-home {
